@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book list</title>
+</head>
+<body>
+    <h1>Books: </h1>
+    {% for i in books %}
+    <ul>
+        <p>
+            <h2>{{ i.title }}</h2>
+        </p>
+        <li>
+            Title: {{ i.title }} <br>
+            Description: {{ i.description }} <br>
+            Price: {{ i.price }} <br>
+            Count: {{ i.count }}
+        </li>
+    </ul>
+
+    {% endfor %}
+</body>
+</html>
